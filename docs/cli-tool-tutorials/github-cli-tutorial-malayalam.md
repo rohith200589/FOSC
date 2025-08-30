@@ -1,8 +1,3 @@
-[![ഓപ്പൺ സോഴ്സ് സ്നേഹം](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[<img align="right" width="150" src="https://firstcontributions.github.io/assets/gui-tool-tutorials/github-desktop-tutorial/join-slack-team.png">](https://join.slack.com/t/firstcontributors/shared_invite/enQtNjkxNzQwNzA2MTMwLTVhMWJjNjg2ODRlNWZhNjIzYjgwNDIyZWYwZjhjYTQ4OTBjMWM0MmFhZDUxNzBiYzczMGNiYzcxNjkzZDZlMDM)
-[![ലൈസൻസ്: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![ഓപ്പൺ സോഴ്സ് സഹായികൾ](https://www.codetriage.com/roshanjossey/first-contributions/badges/users.svg)](https://www.codetriage.com/roshanjossey/first-contributions)
-
 # ആദ്യ സംഭാവനകൾ
 
 | <img alt="GitHub ഡെസ്ക്ടോപ്പ്" src="https://cdn.icon-icons.com/icons2/2157/PNG/512/github_git_hub_logo_icon_132878.png" width="200"> | GitHub കമാൻഡ് ലൈൻ ഇൻ്റർഫേസ് (CLI) |
@@ -23,3 +18,71 @@
 
 ```bash
 gh auth login
+നിർദ്ദേശങ്ങൾ പാലിക്കുക, അപ്പോൾ നിങ്ങൾ തയ്യാറാണ്!
+
+ഈ റെപ്പോസിറ്ററി ഫോർക്ക് ചെയ്യുക
+ഈ കമാൻഡ് റൺ ചെയ്താൽ മതിയാകും:
+
+Bash
+
+gh repo fork firstcontributions/first-contributions
+പ്രധാനം: നിങ്ങൾ ഇത് ക്ലോൺ ചെയ്യണോ എന്ന് ചോദിക്കുമ്പോൾ, "yes" ഓപ്ഷൻ തിരഞ്ഞെടുക്കുക.
+
+നിങ്ങളുടെ ബ്രാഞ്ച് ഉണ്ടാക്കുക
+നമ്മൾ ഈ ഘട്ടം Git ഉപയോഗിച്ചാണ് ചെയ്യുന്നത്. നിങ്ങളുടെ പേരിന് പകരം നിങ്ങളുടെ പേര് നൽകി ഈ കമാൻഡ് നൽകുക:
+
+Bash
+
+git switch -c add-your-name
+ആവശ്യമായ മാറ്റങ്ങൾ വരുത്തി കമ്മിറ്റ് ചെയ്യുക
+ഇപ്പോൾ നിങ്ങൾക്ക് Contributors.md ഫയൽ ഒരു ടെക്സ്റ്റ് എഡിറ്ററിൽ തുറന്ന് അതിൽ നിങ്ങളുടെ പേര് ചേർക്കാവുന്നതാണ്. നിങ്ങളുടെ പേര് എവിടെ വേണമെങ്കിലും ചേർത്ത് ഫയൽ സേവ് ചെയ്യുക.
+
+പ്രോജക്ട് ഡയറക്ടറിയിൽ git status എന്ന കമാൻഡ് പ്രവർത്തിപ്പിക്കുക. അപ്പോൾ നിങ്ങൾ വരുത്തിയ മാറ്റങ്ങൾ കാണാൻ കഴിയും.
+<img align="right" width="450" src="https://firstcontributions.github.io/assets/Readme/git-status.png" alt="git status" />
+
+git add കമാൻഡ് ഉപയോഗിച്ച് ഈ മാറ്റങ്ങൾ നിങ്ങൾ ഉണ്ടാക്കിയ ബ്രാഞ്ചിലേക്ക് ചേർക്കുക:
+git add Contributors.md
+
+ഇനി git commit കമാൻഡ് ഉപയോഗിച്ച് ഈ മാറ്റങ്ങൾ കമ്മിറ്റ് ചെയ്യുക:
+git commit -m "Add your-name to Contributors list"
+ഇവിടെ your-name എന്നതിന് പകരം നിങ്ങളുടെ പേര് നൽകുക.
+
+GitHub-ലേക്ക് മാറ്റങ്ങൾ പുഷ് ചെയ്യുക
+git push കമാൻഡ് ഉപയോഗിച്ച് നിങ്ങളുടെ മാറ്റങ്ങൾ പുഷ് ചെയ്യുക:
+
+git push origin -u your-branch-name
+your-branch-name എന്നതിന് പകരം നിങ്ങൾ നേരത്തെ ഉണ്ടാക്കിയ ബ്രാഞ്ചിന്റെ പേര് നൽകുക.
+
+<details>
+<summary> <strong>പുഷ് ചെയ്യുമ്പോൾ എന്തെങ്കിലും എറർ ലഭിച്ചാൽ ഇവിടെ ക്ലിക്ക് ചെയ്യുക:</strong> </summary>
+
+Authentication Error
+<pre>remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://www.google.com/search?q=https://github.com/%26lt%3Byour-username%26gt%3B/first-contributions.git/'</pre>
+ഒരു SSH കീ ഉണ്ടാക്കാനും അത് നിങ്ങളുടെ അക്കൗണ്ടിൽ കോൺഫിഗർ ചെയ്യാനും GitHub-ൻ്റെ ട്യൂട്ടോറിയൽ സന്ദർശിക്കുക.
+
+</details>
+
+നിങ്ങളുടെ മാറ്റങ്ങൾ റിവ്യൂവിനായി സമർപ്പിക്കുക
+ഇപ്പോൾ നിങ്ങളുടെ റെപ്പോസിറ്ററിയുടെ ഡയറക്ടറിയിൽ ഈ കമാൻഡ് റൺ ചെയ്താൽ ഒരു പുൾ റിക്വസ്റ്റ് ഉണ്ടാക്കാൻ കഴിയും:
+
+Bash
+
+gh pr create --repo firstcontributions/first-contributions
+ഇത് റൺ ചെയ്ത ശേഷം, പുൾ റിക്വസ്റ്റ് സമർപ്പിക്കുക.
+
+നിങ്ങൾ ഉണ്ടാക്കിയ പുൾ റിക്വസ്റ്റ് കാണാൻ നിങ്ങൾക്ക് gh status കമാൻഡ് ഉപയോഗിക്കാം.
+
+ഇനി എങ്ങോട്ട് പോകണം?
+അഭിനന്ദനങ്ങൾ! നിങ്ങൾ ഒരു കോൺട്രിബ്യൂട്ടർ സാധാരണയായി ചെയ്യുന്ന ഫോർക്ക് -> ക്ലോൺ -> എഡിറ്റ് -> പുൾ റിക്വസ്റ്റ് വർക്ക്ഫ്ലോ ഇപ്പോൾ പൂർത്തിയാക്കി.
+
+നിങ്ങളുടെ സംഭാവന ആഘോഷിക്കുകയും നിങ്ങളുടെ സുഹൃത്തുക്കളുമായും ഫോളോവേഴ്സുമായും ഈ വെബ് ആപ്ലിക്കേഷനിൽ പങ്കിടുകയും ചെയ്യുക.
+
+നിങ്ങൾക്ക് എന്തെങ്കിലും സഹായം ആവശ്യമുണ്ടെങ്കിൽ അല്ലെങ്കിൽ ചോദ്യങ്ങളുണ്ടെങ്കിൽ ഞങ്ങളുടെ സ്ലാക്ക് ടീമിൽ ചേരാവുന്നതാണ്. Slack ടീമിൽ ചേരുക.
+
+ഇപ്പോൾ മറ്റ് പ്രോജക്റ്റുകളിൽ സംഭാവന ചെയ്യുന്നത് തുടങ്ങാം. എളുപ്പത്തിൽ തുടങ്ങാൻ കഴിയുന്ന ഇഷ്യൂകളുള്ള പ്രോജക്റ്റുകളുടെ ഒരു ലിസ്റ്റ് ഞങ്ങൾ തയ്യാറാക്കിയിട്ടുണ്ട്. വെബ് ആപ്ലിക്കേഷനിലെ പ്രോജക്റ്റുകളുടെ ലിസ്റ്റ് പരിശോധിക്കുക.
+
+കൂടുതൽ വിവരങ്ങൾ
+മറ്റ് ടൂളുകൾ ഉപയോഗിച്ചുള്ള ട്യൂട്ടോറിയലുകൾ
+പ്രധാന പേജിലേക്ക് മടങ്ങുക
